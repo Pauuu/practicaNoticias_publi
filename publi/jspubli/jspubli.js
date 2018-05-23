@@ -7,15 +7,15 @@ $(document).ready(function () {
     imagenes[1] = "img/imgp2.jpg"
     imagenes[2] = "img/imgp3.jpg"
 
-    var timer = setTimeout(cambiarPubli, 3000);
+    var timer = setInterval(cambiarPubli, 3000);
 
 });
 
 function cambiarPubli() {
-    if (contador > imagenes.length){
+    if (contador >= imagenes.length) {
         contador = 0;
     } else {
-        contador ++;
+        contador++;
     }
 
     $("#imgPubli").attr("src", imagenes[contador]);
