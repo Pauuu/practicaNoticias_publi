@@ -5,7 +5,7 @@ var imagenes = [];
 $(document).ready(function () {
     imagenes[0] = "img/imgp1.jpg"
     imagenes[1] = "img/imgp2.jpg"
-    imagenes[2] = "img/imgp2.jpg"
+    imagenes[2] = "img/imgp3.jpg"
 
     var timer = setTimeout(cambiarPubli, 3000);
 
