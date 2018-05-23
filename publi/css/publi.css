@@ -1,0 +1,11 @@
+
+div {
+    width: 300px;
+    height: 600px;
+}
+
+#imgPubli {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
