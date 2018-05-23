@@ -11,14 +11,35 @@
     <link rel="stylesheet" href="css/publi.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="jspubli/jspubli.js"></script>
+    <script>
+
+		var numImagen = 1;
+		var contador = 0;
+		var imagenes = [];
+
+		imagenes[0] = "img/pcimgp1.jpg"
+	    imagenes[1] = "img/pcimgp2.jpg"
+	    imagenes[2] = "img/pcimgp3.jpg"
+
+	    var timer = setInterval(cambiarPubli, 3000);
+
+function cambiarPubli() {
+    if (contador >= imagenes.length) {
+        contador = 0;
+    } else {
+        contador++;
+    }
+
+    $("#imgPubli").attr("src", imagenes[contador]);
+}
+	</script>
 
 </head>
 
 <body>
 
     <div>
-        <img id="imgPubli" src="img/pcimgp1.jpg" alt="publicidad"/>
+        <img id="imgPubli" src="img/movimgp1.jpg" alt="publicidad"/>
     </div>
 </body>
 

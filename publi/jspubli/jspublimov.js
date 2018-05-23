@@ -3,9 +3,9 @@ var contador = 0;
 var imagenes = [];
 
 $(document).ready(function () {
-    imagenes[0] = "img/pcimgp1.jpg"
-    imagenes[1] = "img/pcimgp2.jpg"
-    imagenes[2] = "img/pcimgp3.jpg"
+    imagenes[0] = "img/imgp1.jpg"
+    imagenes[1] = "img/imgp2.jpg"
+    imagenes[2] = "img/imgp3.jpg"
 
     var timer = setInterval(cambiarPubli, 3000);
 
